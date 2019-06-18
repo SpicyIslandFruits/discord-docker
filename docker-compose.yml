@@ -1,0 +1,6 @@
+version: '3'
+services:
+  discord:
+    image: spicyisland/discord
+    build: .
+    container_name: discord
