@@ -1,4 +1,5 @@
-xhost +local:
+docker-compose build && \
+xhost +local: && \
 docker run -it --name discord \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
